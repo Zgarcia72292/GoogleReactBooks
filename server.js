@@ -13,9 +13,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("googlereactbooks/build"));
 }
 
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, './googlereactbooks/build/index.html'));
-});
+// app.get('*', (request, response) => {
+// 	response.sendFile(path.join(__dirname, './googlereactbooks/build/index.html'));
+// });
 // Add routes, both API and view
 app.use(routes);
 //added

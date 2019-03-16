@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use(routes);
-
+//added
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds023042.mlab.com:23042/heroku_8610h94v");
 
